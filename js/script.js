@@ -30,10 +30,10 @@ function iniciarJogo(){
 
     if (direction == "right") snakeX += box;
     if (direction == "left") snakeX -= box;
-    if (direction == "up") snakeY += box;
-    if (direction == "down") snakeY -= box;
+    if (direction == "up") snakeY -= box;
+    if (direction == "down") snakeY += box;
 
-    snake.pop();
+    
 
     let newHead = {
         x: snakeX,
